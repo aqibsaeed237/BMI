@@ -56,12 +56,20 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Container(
-        color: Colors.amber,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+             Color(0xff9890e3), Color(0xffb1f4cf)
+          ],
+            begin: FractionalOffset(1,0,),
+            end: FractionalOffset(0,1),
+
+
+          )
+        ),
         child: Center(
 
           child: Container(
-            color: bgCOlor,
-            width: 300,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
 
